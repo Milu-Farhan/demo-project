@@ -51,7 +51,7 @@ if(!$_SESSION['name'])
           Sequi temporibus animi necessitatibus dolorem expedita.
         </p>
         <p>
-          <a class="visit" href="">Visit Us To Know More</a>
+          <a class="visit" href="./friends.php">CHAT</a>
         </p>
       </div>
     </section>

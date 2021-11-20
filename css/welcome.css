@@ -82,7 +82,8 @@ nav img {
   color: white;
   border: 1px solid white;
   padding: 12px;
-  font-size: 13px;
+  font-size: 24px;
+  font-weight: 900;
   background: transparent;
   position: relative;
   cursor: pointer;

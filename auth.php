@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die(json_encode($response));
     }
     $password =trim($_POST["password"]);
-    $sql = "SELECT password,first_name,last_name FROM user_info WHERE email = '$email'";
+    $sql = "SELECT id,password,first_name,last_name,dp FROM user_info WHERE email = '$email'";
     $result = $conn->query($sql);
     if ($result->num_rows == 0){
       die(json_encode($response));
@@ -31,11 +31,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
       while ($row = $result->fetch_assoc()) {
         $name= $row["first_name"]." ". $row["last_name"];
+        $id= $row["id"];
+        $dp = $row["dp"];
         $db_password = $row["password"];
     
         if (password_verify($password , $db_password)) {
           $response["result"] = true;
           $_SESSION["name"] = $name;
+          $_SESSION["id"] = $id;
+          $_SESSION["dp"] = $dp;
       }}
     }}
     echo(json_encode($response));

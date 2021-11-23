@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Sign Up</title>
+    <title>Create New Account</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -27,7 +27,7 @@
   <body>
 
     <div class="signup-form">
-      <form action="" method="post" autocomplete="off">
+      <form autocomplete="off">
         <h2>Register</h2>
         <p class="hint-text">
           Create your account. It's free and only takes a minute.

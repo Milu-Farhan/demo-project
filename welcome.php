@@ -56,7 +56,7 @@ if(!$_SESSION['name'])
       </div>
     </section>
 
-    <!-- course -->
+    <!-- course
     <section class="course">
       <h1>Courses We Offer</h1>
       <p>
@@ -92,7 +92,7 @@ if(!$_SESSION['name'])
       </div>
     </section>
 
-    <!-- campus -->
+    campus
     <section class="campus">
       <h1>Our Global Campus</h1>
       <p>
@@ -126,7 +126,7 @@ if(!$_SESSION['name'])
       </div>
     </section>
 
-<!-- facilities -->
+facilities
 <section class="facilities">
 
   <h1>OUR FACILITIES</h1>
@@ -153,7 +153,7 @@ if(!$_SESSION['name'])
   </div>
 </section>
 
-    <!-- java script for toggle menu -->
+    java script for toggle menu
     <script>
       var navLinks = document.getElementById("navLinks");
 
@@ -166,7 +166,7 @@ if(!$_SESSION['name'])
       }
     </script>
 
-    <!-- testimonials -->
+    testimonials
     <section class="test">
       <h1>Students Says</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cumque aperiam, repudiandae veritatis illo dolor!</p>
@@ -203,11 +203,11 @@ if(!$_SESSION['name'])
 
     </section>
 
-<!-- call to action -->
+call to action
 <section class="call">
 <h1>Enroll For Our Various Courses</h1>
 <a href="" class="visit">CONTACT US</a>
-</section>
+</section> -->
 
 <!-- footer -->
 <section class="footer">

@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "123";
 $dbname = "user_info";
 
 // Create connection
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $newPassword = trim($_POST["new_password"]);
     $confirmPassword = trim($_POST["confirm_password"]);
     $response = array("result" => false);
-
+    $dp = "avatar.png";
     if ($first_name == "") {
         $response["message"] = 1;
         die(json_encode($response));
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     } else { 
         $response["23"] = "not verified";
     } 
-    $sql = "INSERT INTO user_info (first_name,last_name,email,password) VALUES('$first_name','$last_name','$email','$hash')";
+    $sql = "INSERT INTO user_info (first_name,last_name,email,password,dp) VALUES('$first_name','$last_name','$email','$hash',$dp)";
     $result = $conn->query($sql);
 
     if ($result === TRUE) {

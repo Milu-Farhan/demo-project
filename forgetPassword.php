@@ -50,7 +50,7 @@
       </form>
       <div class="text-center">
         Remembering Password?
-        <a href="login.php">Log in</a>
+        <a href="index.php">Log in</a>
       </div>
     </div>
 

@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     } else { 
         $response["23"] = "not verified";
     } 
-    $sql = "INSERT INTO user_info (first_name,last_name,email,password,dp) VALUES('$first_name','$last_name','$email','$hash','$dp')";
+    $sql = "INSERT INTO `user_info` (`first_name`,`last_name`,`email`,`password`,`dp`) VALUES('$first_name','$last_name','$email','$hash','$dp')";
     $result = $conn->query($sql);
 
     if ($result === TRUE) {

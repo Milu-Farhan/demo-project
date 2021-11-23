@@ -97,7 +97,7 @@ $(document).ready(function () {
         if (data.result) {
           $("#myModal").modal("show");
           setTimeout(function () {
-            window.location.href = "login.php"; //will redirect to your blog page (an ex: blog.html)
+            window.location.href = "index.php"; //will redirect to your blog page (an ex: blog.html)
           }, 3000);
         }
         if (data.message == 4) {

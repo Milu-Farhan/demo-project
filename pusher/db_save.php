@@ -27,12 +27,13 @@ $status= array();
 
     $sql = "INSERT INTO `chat` (sid,type,chat,sender_id,receiver_id,time) VALUES('$channel_id','$type','$message','$sender_id','$receiver_id','$time')";
     $result = $conn->query($sql);
-
+    file_put_contents("test.txt","\ncheck point 1",FILE_APPEND);
 if ($result == true) {
     $status["status"]= "true";
 }else {
     $status["status"]= "false";
 }
+file_put_contents("test.txt","\ncheck point 2",FILE_APPEND);
 }
 
 elseif ($_SERVER["REQUEST_METHOD"] == "POST" && $type == "mms") {

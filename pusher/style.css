@@ -251,7 +251,7 @@ body {
   width: 100%;
 }
 
-#fileNamePreview{
+#fileNamePreview {
   margin-left: 25%;
   margin-bottom: 10px;
 }
@@ -262,7 +262,13 @@ body {
 .closePopup {
   margin-left: 45%;
 }
-#pdf-download{
+#pdf-download {
   color: black;
   font-weight: 500;
+}
+
+@media (max-width: 735px) {
+  .msger {
+    width: auto;
+  }
 }
